@@ -1,17 +1,18 @@
 <?php
 
 namespace controllers;
-
+use View;
 /**
  * Description of Main
  *
  * @author web
  */
 class Main {
-
+    
     public function index() {
 	//TODO some main action
-	echo 'index from main controllers';
+	$view = new View('index');
+	$view->render();
     }
 
 }
