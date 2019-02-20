@@ -11,4 +11,4 @@ spl_autoload_register(function ($class) {
     return FALSE;
 });
 include_once 'app' . DIRECTORY_SEPARATOR . 'config.php';
-Router::init();
+
