@@ -1,6 +1,7 @@
 <?php
 
 use controllers\Main;
+use controllers\News;
 
 /**
  * 
@@ -11,5 +12,8 @@ class Router {
 	$controller = new Main();
 	$controller->index();
     }
-
+    static public function news() {
+	$controller = new News();
+	$controller->index();
+    }
 }

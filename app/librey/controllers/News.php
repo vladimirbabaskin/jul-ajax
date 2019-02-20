@@ -4,15 +4,15 @@ namespace controllers;
 use AbstractController;
 
 /**
- * Description of Main
+ * Description of News
  *
  * @author web
  */
-class Main extends AbstractController {
-    
+class News extends AbstractController {
+
     public function index() {
 	//TODO some main action
-	$this->view->setPage('index');
+	$this->view->setPage('news');
 	$this->view->render();
     }
 

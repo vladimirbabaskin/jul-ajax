@@ -17,12 +17,15 @@ class View {
 	if (empty($template)) {
 	    $template = 'main';
 	}
-	$this->page = $page . '.php';
+	$this->setPage($page);
 	$this->template = $template . '.php';
     }
 
     public function render() {
 	include_once 'app' . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR. $this->template;
+    }
+    public function setPage($page) {
+	$this->page = $page . '.php';
     }
 
 }
