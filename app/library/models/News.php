@@ -28,4 +28,9 @@ class News {
 	    return FALSE;
 	}
     }
+    
+    public function add($title, $text) {
+	$query = 'insert into news values (null, \''.$title.'\',\''.$text.'\')';
+	return $this->db->query($query);
+    }
 }

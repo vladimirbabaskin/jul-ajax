@@ -12,12 +12,19 @@ class Router {
 	$controller = new Main();
 	$controller->index();
     }
+
     static public function news() {
 	$controller = new News();
 	$controller->index();
     }
+
     static public function newsApi() {
 	$controller = new News();
-	$controller->all();
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	    $controller->add();
+	} else {
+	    $controller->all();
+	}
     }
+
 }

@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title></title>
 	<script src="js/main.js"></script>
+	<link href="css/main.css" rel="stylesheet"/>
     </head>
     <body>
 	<?php
