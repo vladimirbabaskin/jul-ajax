@@ -16,4 +16,8 @@ class Router {
 	$controller = new News();
 	$controller->index();
     }
+    static public function newsApi() {
+	$controller = new News();
+	$controller->all();
+    }
 }
